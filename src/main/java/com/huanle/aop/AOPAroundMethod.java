@@ -9,6 +9,7 @@ public class AOPAroundMethod implements MethodInterceptor {
 
 	public Object invoke(MethodInvocation methodInvocation) throws Throwable {
 
+		//可以根据被调用的函数名称和参数或者被代理对象的名字来定制不同的功能
 		System.out.println("Method name : " + methodInvocation.getMethod().getName());
 		System.out.println("Method arguments : " + Arrays.toString(methodInvocation.getArguments()));
 		System.out.println("This object : " + methodInvocation.getThis().getClass());
