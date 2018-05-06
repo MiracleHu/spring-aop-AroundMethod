@@ -16,7 +16,7 @@ public class AOPAroundMethod implements MethodInterceptor {
 		System.out.println("AOPAroundMethod : Before method call.");
 
 		try {
-			// proceed to original method call
+			// proceed to original method call原本的方法在这里被执行
 			Object result = methodInvocation.proceed();
 
 			// same with AfterReturningAdvice

@@ -5,8 +5,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.huanle.aop.PrinterService;
 
-
-//从结果我们可以看到AOPBeforeMethod“的before()方法在每个myService的方法之前执行。
 public class MainApp {
 	public static void main(String[] args) {
 	    ApplicationContext appContext = new ClassPathXmlApplicationContext("beans.xml");
