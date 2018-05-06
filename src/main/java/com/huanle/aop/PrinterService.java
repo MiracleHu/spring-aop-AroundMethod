@@ -2,6 +2,7 @@ package com.huanle.aop;
 
 
 public class PrinterService {
+	
 	  private String name;
 	  private String url;
 	  public void setName(String name) {
